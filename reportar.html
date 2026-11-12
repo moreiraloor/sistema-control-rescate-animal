@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Nuevo Animal - Refugio</title>
+</head>
+<body>
+    <header>
+        <h1>Refugio Patitas Felices</h1>
+        <p>Módulo de Registro de Ingresos</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html">Reportar Caso</a></li>
+            <li><a href="rescates.html">Casos Registrados</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Formulario de Registro de Nuevo Animal Rescatado</h2>
+            <form action="#" method="POST">
+                <div>
+                    <label for="titulo">Título del caso o nombre provisional:</label><br>
+                    <input type="text" id="titulo" name="titulo" required>
+                </div>
+                <br>
+                <div>
+                    <label for="categoria">Categoría:</label><br>
+                    <select id="categoria" name="categoria">
+                        <option value="perros">Perros</option>
+                        <option value="gatos">Gatos</option>
+                        <option value="silvestre">Fauna Silvestre</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label>Nivel de urgencia médica:</label><br>
+                    <input type="radio" id="alta" name="urgencia" value="Alta">
+                    <label for="alta">Alta</label>
+                    <input type="radio" id="media" name="urgencia" value="Media">
+                    <label for="media">Media</label>
+                    <input type="radio" id="baja" name="urgencia" value="Baja">
+                    <label for="baja">Baja</label>
+                </div>
+                <br>
+                <div>
+                    <label for="descripcion">Descripción detallada del estado en que se encontró:</label><br>
+                    <textarea id="descripcion" name="descripcion" rows="4" cols="40"></textarea>
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Registrar Caso</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sistema de Rescate Animal. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
